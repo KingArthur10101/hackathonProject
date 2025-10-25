@@ -503,10 +503,17 @@ class CareerPathPlanner {
    
     // Dashboard Methods
     loadDashboard() {
-        this.loadSavedMajors();
-        this.loadSavedColleges();
-        this.loadSavedJobs();
-        this.updateProgressChecklist();
+        // Set up export dashboard functionality
+        document.getElementById('export-dashboard')?.addEventListener('click', () => {
+            const dashboardContent = document.querySelector('.dashboard-quick').innerText;
+            const blob = new Blob([dashboardContent], { type: 'text/plain' });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = 'dashboard-snapshot.txt';
+            a.click();
+            URL.revokeObjectURL(url);
+        });
     }
    
     loadSavedMajors() {
