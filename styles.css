@@ -53,6 +53,29 @@ body {
     color: #2563eb;
 }
 
+.nav-brand {
+    display: flex;
+    align-items: center;
+}
+
+.nav-brand .home-button {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: inherit; /* keep text same color as before */
+}
+
+.nav-brand .logo {
+    height: 32px; /* adjust as needed for your layout */
+    width: auto;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.nav-brand .home-button:hover .logo {
+    transform: scale(1.05);
+}
 /* Main Content */
 .main-content {
     max-width: 1200px;
@@ -1082,3 +1105,4 @@ a:focus {
         border: 2px solid #000;
     }
 }
+
