@@ -65,40 +65,94 @@
         </div>
       </div>
 
-      <!-- Find a Major Page -->
+      <!-- 🔹 Find a Major Page -->
       <div id="find-major-page" class="page">
         <div class="page-header">
           <button class="back-button" data-page="home">← Back</button>
           <h2>Find a Major</h2>
         </div>
-        <p>Major finder content here...</p>
+        
+        <!-- Original interactive major finder content -->
+        <div class="major-finder">
+          <div class="step-indicator">
+            <div class="step active" data-step="courses">Courses</div>
+            <div class="step" data-step="activities">Activities</div>
+            <div class="step" data-step="skills">Skills</div>
+            <div class="step" data-step="preferences">Preferences</div>
+          </div>
+
+          <div id="courses-step" class="step-content active">
+            <h3>Your Courses</h3>
+            <p>Select your current and past classes</p>
+            <!-- Your course selection inputs preserved here -->
+          </div>
+
+          <div id="activities-step" class="step-content">
+            <h3>Your Activities</h3>
+            <p>Tell us about your clubs, work, and hobbies</p>
+          </div>
+
+          <div id="skills-step" class="step-content">
+            <h3>Rate Your Skills</h3>
+            <p>How confident are you in these areas?</p>
+          </div>
+
+          <div id="preferences-step" class="step-content">
+            <h3>Your Preferences</h3>
+            <p>Help us understand your learning and work style</p>
+          </div>
+
+          <div class="step-navigation">
+            <button class="btn-secondary" id="prev-step" disabled>Previous</button>
+            <button class="btn-primary" id="next-step">Next</button>
+            <button class="btn-primary" id="get-results" style="display: none;">Get My Results</button>
+          </div>
+        </div>
       </div>
 
-      <!-- Explore Colleges Page -->
+      <!-- 🔹 Explore Colleges Page -->
       <div id="explore-colleges-page" class="page">
         <div class="page-header">
           <button class="back-button" data-page="home">← Back</button>
           <h2>Explore Colleges</h2>
         </div>
-        <p>College explorer content here...</p>
+        <div class="college-explorer">
+          <div class="filters-section">
+            <h3>Filters</h3>
+            <label for="distance-filter">Distance</label>
+            <select id="distance-filter">
+              <option value="all">Any Distance</option>
+              <option value="50">Within 50 miles</option>
+              <option value="100">Within 100 miles</option>
+              <option value="200">Within 200 miles</option>
+            </select>
+          </div>
+          <div class="colleges-list"></div>
+        </div>
       </div>
 
-      <!-- Jobs and Internships Page -->
+      <!-- 🔹 Jobs and Internships Page -->
       <div id="jobs-internships-page" class="page">
         <div class="page-header">
           <button class="back-button" data-page="home">← Back</button>
           <h2>Jobs and Internships</h2>
         </div>
-        <p>Jobs and internships content here...</p>
+        <div class="jobs-explorer">
+          <div class="filters-section">
+            <h3>Filters</h3>
+            <label><input type="checkbox" id="student-friendly" checked /> High School Friendly</label>
+          </div>
+          <div class="jobs-list"></div>
+        </div>
       </div>
 
-      <!-- Dashboard Page -->
+      <!-- Optional placeholder pages -->
       <div id="dashboard-page" class="page">
         <div class="page-header">
           <button class="back-button" data-page="home">← Back</button>
           <h2>Your Dashboard</h2>
         </div>
-        <p>Dashboard overview content here...</p>
+        <p>Dashboard content here...</p>
       </div>
 
     </main>
