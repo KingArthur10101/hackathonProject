@@ -20,8 +20,6 @@
         </div>
         <div class="nav-menu">
           <a href="#" class="nav-link" data-page="about">About</a>
-          <a href="#" class="nav-link" data-page="privacy">Privacy</a>
-          <a href="#" class="nav-link" data-page="login">Log In</a>
         </div>
       </div>
     </nav>
@@ -439,7 +437,57 @@
           <button class="back-button" data-page="home">← Back</button>
           <h2>Your Dashboard</h2>
         </div>
-        <p>Dashboard content here...</p>
+
+        <div class="dashboard-quick">
+          <h3>Top Schools</h3>
+          <div class="top-schools-grid">
+            <div class="school-card">
+              <h4>State University</h4>
+              <p>Location: Bowling Green, OH</p>
+              <p>Acceptance: 68%</p>
+              <p>Avg Tuition: $12,000/year</p>
+            </div>
+
+            <div class="school-card">
+              <h4>Regional Tech</h4>
+              <p>Location: Nearby City</p>
+              <p>Acceptance: 74%</p>
+              <p>Avg Tuition: $9,500/year</p>
+            </div>
+
+            <div class="school-card">
+              <h4>Selective College</h4>
+              <p>Location: Metro Area</p>
+              <p>Acceptance: 22%</p>
+              <p>Avg Tuition: $36,000/year</p>
+            </div>
+          </div>
+
+          <div class="dashboard-stats">
+            <div class="stat-item">
+              <strong>Saved Schools:</strong> 3
+            </div>
+            <div class="stat-item">
+              <strong>Scholarships Found:</strong> 5
+            </div>
+            <div class="stat-item">
+              <strong>Internship Matches:</strong> 2
+            </div>
+          </div>
+
+          <button class="btn-primary" id="export-dashboard">Export Snapshot</button>
+        </div>
+      </div>
+
+      <!-- About Page -->
+      <div id="about-page" class="page">
+        <div class="page-header">
+          <button class="back-button" data-page="home">← Back</button>
+          <h2>About</h2>
+        </div>
+        <div class="about-content" style="text-align: center; padding: 2rem;">
+          <p style="font-size: 1.2rem;">Created during Bowling Green Hackathon</p>
+        </div>
       </div>
 
     </main>
